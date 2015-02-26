@@ -1,0 +1,22 @@
+default:
+  - 'uglify:bower'
+  - 'compile'
+  - 'dist'
+  - 'watch'
+
+compile:
+  - 'clean'
+  - 'coffee:compile'
+  - 'stylus:compile'
+
+dist:
+  - 'concat:user'
+  - 'uglify:user'
+  - 'autoprefixer'
+  - 'cssmin'
+  - 'concat:bower'
+
+watch-compile:
+  - 'clean'
+  - 'newer:coffee'
+  - 'newer:stylus'

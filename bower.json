@@ -1,0 +1,20 @@
+{
+  "name": "Infographic template",
+  "version": "0.0.2",
+  "authors": [
+    "Gurov German <g.gurov@rambler-co.ru>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "d3": "~3.4.6",
+    "underscore": "~1.6.0",
+    "modernizr": "~2.8.2"
+  }
+}
