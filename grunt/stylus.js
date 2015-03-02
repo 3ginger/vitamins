@@ -1,7 +1,10 @@
 module.exports = {
     compile: {
         files: {
-            'tmp/user.css': 'stylus/**/*.styl'
+            'tmp/_app.css': 'src/css/app.styl'
         }
+    },
+    options:{
+        compress:false
     }
 };

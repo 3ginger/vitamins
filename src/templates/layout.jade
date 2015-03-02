@@ -1,0 +1,44 @@
+- var site_name = 'Витамины, минералы, ПНЖК'
+- var site_developer = 'German Gurov'
+- var debug_mode = false
+
+
+doctype html
+html(lang="en")
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        title=site_name
+
+        meta(name='description' content='vitamins')
+        meta(name='author' content=site_developer)
+        meta(name='type' content='infographic')
+
+        if debug_mode
+            link(rel='stylesheet' href='css/app.css')
+            script(src='js/modernizr.js')
+        else
+            link(rel='stylesheet' href='css/app.min.css')
+            script(src='js/modernizr.min.js')
+
+        //head section
+        block head
+
+    body
+        include browser_alert
+
+        .content
+            block content
+
+
+        //script section
+        if debug_mode
+            include debug_panel
+            script(src='js/app.js')
+        else
+            script(src='js/app.min.js')
+
+        block scripts
+
+
+

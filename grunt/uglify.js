@@ -1,13 +1,17 @@
 module.exports = {
-    user: {
+    modernizr: {
         files: {
-            'tmp/user.min.js': 'tmp/user.js'
+            'web/js/modernizr.min.js': 'web/js/modernizr.js'
         }
     },
-    bower:{
-        files:{
-            'bower/underscore/underscore.min.js': 'bower/underscore/underscore.js',
-            'bower/modernizr/modernizr.min.js': 'bower/modernizr/modernizr.js'
+    app: {
+        options:{
+            compress: {
+                drop_console: true
+            }
+        },
+        files: {
+            'web/js/app.min.js': 'web/js/app.js'
         }
     }
 };

@@ -1,3 +1,3 @@
 module.exports = {
-    'tmp/user.ap.css': 'tmp/user.css'
+    'web/css/app.css': 'web/css/app.css'
 };

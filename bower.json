@@ -1,8 +1,8 @@
 {
-  "name": "Infographic template",
-  "version": "0.0.2",
+  "name": "Standart Template 3G",
+  "version": "0.2.0",
   "authors": [
-    "Gurov German <g.gurov@rambler-co.ru>"
+    "Gurov German <3gingermail@gmail.com>"
   ],
   "license": "MIT",
   "ignore": [
@@ -15,6 +15,11 @@
   "devDependencies": {
     "d3": "~3.4.6",
     "underscore": "~1.6.0",
-    "modernizr": "~2.8.2"
+    "modernizr": "~2.8.2",
+    "jquery": "~2.1.1",
+    "normalize.css": "~3.0.2",
+    "rupture-by-jenius": "~0.6.1",
+    "typographic": "*",
+    "jeet": "~6.1.2"
   }
 }

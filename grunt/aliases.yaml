@@ -1,22 +1,24 @@
 default:
-  - 'uglify:bower'
-  - 'compile'
-  - 'dist'
-  - 'watch'
+  - dev
+  - watch
 
-compile:
-  - 'clean'
-  - 'coffee:compile'
-  - 'stylus:compile'
+server:
+  - 'connect'
+  - default
 
-dist:
-  - 'concat:user'
-  - 'uglify:user'
+dev:
+  - base
+  - prepare
+
+prepare:
+  - 'concurrent:prepareResources'
+  - 'concat:js'
+  - 'concat:css'
   - 'autoprefixer'
-  - 'cssmin'
-  - 'concat:bower'
 
-watch-compile:
-  - 'clean'
-  - 'newer:coffee'
-  - 'newer:stylus'
+base:
+  - 'concurrent:prepareTask'
+
+pub:
+  - dev
+  - 'concurrent:production'

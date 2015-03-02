@@ -1,3 +1,5 @@
 module.exports = {
-    tmp: ['tmp/*']
+    tmp: ['tmp/', 'build/', 'web/'],
+    css: ['web/css/'],
+    js: ['web/js/']
 };

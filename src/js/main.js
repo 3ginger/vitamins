@@ -1,8 +1,8 @@
 (function() {
     var iconPath = 'img/icons/';
-    d3.csv('data.csv', function(vitaminsData) {
+    d3.csv('data/data.csv', function(vitaminsData) {
         console.log(vitaminsData);
-        d3.csv('organs.csv', function(organsData) {
+        d3.csv('data/organs.csv', function(organsData) {
             console.log(organsData);
 
             _.each(vitaminsData, function(d) {
@@ -128,7 +128,7 @@
                 _.each(vitaminsData, function(vitamin){
                     _.each(vitamin.organs, function(organ){
                         hordes.push({pos:[vitamin.bb, organ.bb], key:vitamin.name + vitamin.index + organ.organ});
-                    })
+                    });
                 });
                 return hordes;
             }

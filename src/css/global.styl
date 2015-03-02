@@ -1,0 +1,17 @@
+*, *:after, *:before
+  box-sizing border-box
+  position: relative
+
+html
+  #browse-happy
+    display none
+  &.no-svg
+  &.no-canvas
+    #browse-happy
+      display block
+    #content
+      display none
+  &.svg
+  &.canvas
+    #content
+      display block

@@ -1,3 +1,10 @@
 module.exports = {
-    'dist/main.min.css': 'tmp/user.ap.css'
+    options:{
+        keepSpecialComments:0
+    },
+    app:{
+        files: {
+            'web/css/app.min.css': 'web/css/app.css'
+        }
+    }
 };

@@ -1,3 +1,12 @@
+@import 'nib'
+@import '../../bower/jeet/stylus/jeet/index'
+@import '../../bower/typographic/typographic/index'
+@import '../../bower/rupture-by-jenius/rupture/index'
+
+@import 'fonts'
+@import 'global'
+@import 'debug'
+
 mc = #FFF
 bc = #ECECEC
 ac = #FFED00
@@ -87,6 +96,7 @@ body
         stroke bc
         &.selected
           stroke ac
+          stroke-width 2px
   .titles
     .title:nth-child(1)
       float: left

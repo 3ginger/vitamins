@@ -1,26 +1,17 @@
 module.exports = {
-    user: {
+    js: {
         files: {
-            'tmp/user.js': [
-                'js/components/**/*.js',
-                'js/user/**/*.js',
-                'tmp/user.js'
-            ],
-            'tmp/user.css': ['css/components/**/*.css', 'css/user/**/*.css', 'tmp/user.css']
+            'web/js/app.js': [
+                'build/_bower.js',
+                'src/js/**/*.js'
+            ]
         }
     },
-    bower: {
-        options: {
-            separator: '\n',
-            banner: '/*! <%= grunt.template.today("yyyy-mm-dd") %> */\n\n'
-        },
+    css:{
         files: {
-            'dist/main.min.js': [
-                'bower/modernizr/modernizr.min.js',
-                'bower/underscore/underscore.min.js',
-                'bower/d3/d3.min.js',
-                //'bower/jquery/dist/jquery.min.js',
-                'tmp/user.min.js'
+            'web/css/app.css': [
+                'build/_bower.css',
+                'tmp/_app.css'
             ]
         }
     }
