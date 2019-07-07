@@ -1,4 +1,4 @@
-Инфографика о витаминах и человеческом теле 
+Infographics about vitamins and the human body
 
 - d3
 - underscore
